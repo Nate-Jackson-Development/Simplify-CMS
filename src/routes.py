@@ -8,3 +8,7 @@ def home():
 @app.app.route('/auth', methods=['GET','POST'])
 def auth():
     return render_template('auth.html')
+
+@app.app.route('/control-panel', methods=['GET', 'POST'])
+def method_name():
+   return render_template('control-panel.html')

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Control Panel</title>
+    <!-- Required styles for Material Web -->
+    <link rel="stylesheet" href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <style>
+    
+        .my-card-content {
+            padding: 16px;
+          }
+
+        div.cardSize {
+            max-width: 15em;
+            max-height: 15em;
+        }
+    </style>
+</head>
+<body>
+    <!-- Top Nav -->
+    <div class="mdc-tab-bar" role="tablist">
+        <div class="mdc-tab-scroller">
+          <div class="mdc-tab-scroller__scroll-area">
+            <div class="mdc-tab-scroller__scroll-content">
+            <button class="mdc-tab mdc-tab--active" role="tab" aria-selected="true" tabindex="0">
+                <span class="mdc-tab__content">
+                    <span class="mdc-tab__icon material-icons" aria-hidden="true">analytics</span>
+                    <span class="mdc-tab__text-label">Dashboard</span>
+                </span>
+                <span class="mdc-tab-indicator mdc-tab-indicator--active">
+                    <span class="mdc-tab-indicator__content mdc-tab-indicator__content--underline"></span>
+                </span>
+                <span class="mdc-tab__ripple"></span>
+            </button>
+              <button class="mdc-tab mdc-tab--active" role="tab" aria-selected="true" tabindex="0">
+                <span class="mdc-tab__content">
+                  <span class="mdc-tab__icon material-icons" aria-hidden="true">article</span>
+                  <span class="mdc-tab__text-label">Pages</span>
+                </span>
+                <span class="mdc-tab-indicator mdc-tab-indicator--active">
+                  <span class="mdc-tab-indicator__content mdc-tab-indicator__content--underline"></span>
+                </span>
+                <span class="mdc-tab__ripple"></span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <br>
+
+    <!-- Content -->
+
+
+      <div>
+        <div class="mdc-card cardSize">
+            <h3 class="my-card-content">
+                Hello from the Dashboard!
+            </h3>
+        </div>
+      </div>
+
+      <!-- Scripts -->
+      <script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
+      <script>
+        import {MDCTabBar} from '@material/tab-bar';
+
+        const tabBar = new MDCTabBar(document.querySelector('.mdc-tab-bar'));
+      </script>
+</body>
+</html>
